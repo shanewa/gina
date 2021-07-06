@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="851px" preserveAspectRatio="none" style="width:645px;height:851px;background:#FFFFFF;" version="1.1" viewBox="0 0 645 851" width="645px" zoomAndPan="magnify"><defs><filter height="300%" id="fz0dpr4rn58ov" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[44c966c2051294de15cabbfd9e4cf50e]
+class commits--><rect codeLine="20" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="109.9609" id="commits" style="stroke:#A80036;stroke-width:1.5;" width="175" x="259.5" y="209"/><ellipse cx="274.5" cy="227.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M274.9375,225.5 L276.7813,225.5 L276.7813,227.0938 C276.7813,227.4844 276.8125,227.6563 276.9063,227.7969 C277.0625,228.0469 277.3438,228.2031 277.6406,228.2031 C277.9063,228.2031 278.1563,228.0781 278.3281,227.8594 C278.4688,227.6875 278.4844,227.5625 278.4844,227.0938 L278.4844,223.8125 L269.7188,223.8125 L269.7188,227.0938 C269.7188,227.4844 269.75,227.6563 269.8281,227.7969 C269.9844,228.0625 270.2813,228.2031 270.5625,228.2031 C270.8438,228.2031 271.0938,228.0781 271.2656,227.8594 C271.375,227.6875 271.4063,227.5469 271.4063,227.0938 L271.4063,225.5 L273.2344,225.5 L273.2344,232.0156 L272.125,232.0156 C271.6875,232.0156 271.5625,232.0313 271.4063,232.1406 C271.1563,232.2969 271,232.5781 271,232.875 C271,233.125 271.1406,233.3906 271.3594,233.5469 C271.5156,233.6719 271.7344,233.7188 272.125,233.7188 L276.0625,233.7188 C276.3906,233.7188 276.6563,233.6719 276.7656,233.5938 C277.0313,233.4531 277.1719,233.1563 277.1719,232.875 C277.1719,232.5938 277.0469,232.3438 276.8125,232.1719 C276.6563,232.0469 276.5156,232.0156 276.0625,232.0156 L274.9375,232.0156 L274.9375,225.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="51" x="334.5" y="225.1387">commits</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="143" x="288.5" y="239.1074">(Commits in repository)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="260.5" x2="433.5" y1="246.9375" y2="246.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="69" x="265.5" y="261.1479">commit_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="338.5" y="261.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="20" x="265.5" y="273.9526">sha</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="289.5" y="273.9526">VARCHAR[40]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="53" x="265.5" y="286.7573">summary</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="322.5" y="286.7573">VARCHAR[75]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="27" x="265.5" y="299.562">hook</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="296.5" y="299.562">VARCHAR[20]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="38" x="265.5" y="312.3667">dev_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="307.5" y="312.3667">INTEGER</text><!--MD5=[f57c53f854481d44bdae29012291a95b]
+class views--><rect codeLine="28" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="109.9609" id="views" style="stroke:#A80036;stroke-width:1.5;" width="166" x="56" y="7"/><ellipse cx="85.85" cy="25.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M86.2875,23.5 L88.1313,23.5 L88.1313,25.0938 C88.1313,25.4844 88.1625,25.6563 88.2563,25.7969 C88.4125,26.0469 88.6938,26.2031 88.9906,26.2031 C89.2563,26.2031 89.5063,26.0781 89.6781,25.8594 C89.8188,25.6875 89.8344,25.5625 89.8344,25.0938 L89.8344,21.8125 L81.0688,21.8125 L81.0688,25.0938 C81.0688,25.4844 81.1,25.6563 81.1781,25.7969 C81.3344,26.0625 81.6313,26.2031 81.9125,26.2031 C82.1938,26.2031 82.4438,26.0781 82.6156,25.8594 C82.725,25.6875 82.7563,25.5469 82.7563,25.0938 L82.7563,23.5 L84.5844,23.5 L84.5844,30.0156 L83.475,30.0156 C83.0375,30.0156 82.9125,30.0313 82.7563,30.1406 C82.5063,30.2969 82.35,30.5781 82.35,30.875 C82.35,31.125 82.4906,31.3906 82.7094,31.5469 C82.8656,31.6719 83.0844,31.7188 83.475,31.7188 L87.4125,31.7188 C87.7406,31.7188 88.0063,31.6719 88.1156,31.5938 C88.3813,31.4531 88.5219,31.1563 88.5219,30.875 C88.5219,30.5938 88.3969,30.3438 88.1625,30.1719 C88.0063,30.0469 87.8656,30.0156 87.4125,30.0156 L86.2875,30.0156 L86.2875,23.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="136.15" y="23.1387">views</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="101" x="103.15" y="37.1074">(Commits views)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="57" x2="221" y1="44.9375" y2="44.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="47" x="62" y="59.1479">view_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="113" y="59.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="66" x="62" y="71.9526">view_name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="132" y="71.9526">VARCHAR[75]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="74" x="62" y="84.7573">from_commit</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="140" y="84.7573">VARCHAR[40]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="59" x="62" y="97.562">to_commit</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="125" y="97.562">VARCHAR[40]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="74" x="62" y="110.3667">commit_date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="140" y="110.3667">VARCHAR[20]</text><!--MD5=[172b2335d1e2faea004c22c865edc0f3]
+class mappings--><rect codeLine="36" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="98.3203" id="mappings" style="stroke:#A80036;stroke-width:1.5;" width="156" x="7" y="430"/><ellipse cx="22" cy="455.9531" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M22.4375,453.4844 L24.2813,453.4844 L24.2813,455.0781 C24.2813,455.4688 24.3125,455.6406 24.4063,455.7813 C24.5625,456.0313 24.8438,456.1875 25.1406,456.1875 C25.4063,456.1875 25.6563,456.0625 25.8281,455.8438 C25.9688,455.6719 25.9844,455.5469 25.9844,455.0781 L25.9844,451.7969 L17.2188,451.7969 L17.2188,455.0781 C17.2188,455.4688 17.25,455.6406 17.3281,455.7813 C17.4844,456.0469 17.7813,456.1875 18.0625,456.1875 C18.3438,456.1875 18.5938,456.0625 18.7656,455.8438 C18.875,455.6719 18.9063,455.5313 18.9063,455.0781 L18.9063,453.4844 L20.7344,453.4844 L20.7344,460 L19.625,460 C19.1875,460 19.0625,460.0156 18.9063,460.125 C18.6563,460.2813 18.5,460.5625 18.5,460.8594 C18.5,461.1094 18.6406,461.375 18.8594,461.5313 C19.0156,461.6563 19.2344,461.7031 19.625,461.7031 L23.5625,461.7031 C23.8906,461.7031 24.1563,461.6563 24.2656,461.5781 C24.5313,461.4375 24.6719,461.1406 24.6719,460.8594 C24.6719,460.5781 24.5469,460.3281 24.3125,460.1563 C24.1563,460.0313 24.0156,460 23.5625,460 L22.4375,460 L22.4375,453.4844 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="59" x="68.5" y="446.1387">mappings</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="120" x="36" y="460.1074">(Mappings between</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="121" x="37.5" y="474.0762">views and commits)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="162" y1="481.9063" y2="481.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="74" x="13" y="496.1167">mapping_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="91" y="496.1167">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="43" x="13" y="508.9214">view_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="60" y="508.9214">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="58" x="13" y="521.7261">commit_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="75" y="521.7261">INTEGER</text><!--MD5=[fbc349be9df8dfbcff654dc8637c6a16]
+class developers--><rect codeLine="42" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="71.5469" id="developers" style="stroke:#A80036;stroke-width:1.5;" width="183" x="257.5" y="26"/><ellipse cx="272.5" cy="44.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M272.9375,42.5 L274.7813,42.5 L274.7813,44.0938 C274.7813,44.4844 274.8125,44.6563 274.9063,44.7969 C275.0625,45.0469 275.3438,45.2031 275.6406,45.2031 C275.9063,45.2031 276.1563,45.0781 276.3281,44.8594 C276.4688,44.6875 276.4844,44.5625 276.4844,44.0938 L276.4844,40.8125 L267.7188,40.8125 L267.7188,44.0938 C267.7188,44.4844 267.75,44.6563 267.8281,44.7969 C267.9844,45.0625 268.2813,45.2031 268.5625,45.2031 C268.8438,45.2031 269.0938,45.0781 269.2656,44.8594 C269.375,44.6875 269.4063,44.5469 269.4063,44.0938 L269.4063,42.5 L271.2344,42.5 L271.2344,49.0156 L270.125,49.0156 C269.6875,49.0156 269.5625,49.0313 269.4063,49.1406 C269.1563,49.2969 269,49.5781 269,49.875 C269,50.125 269.1406,50.3906 269.3594,50.5469 C269.5156,50.6719 269.7344,50.7188 270.125,50.7188 L274.0625,50.7188 C274.3906,50.7188 274.6563,50.6719 274.7656,50.5938 C275.0313,50.4531 275.1719,50.1563 275.1719,49.875 C275.1719,49.5938 275.0469,49.3438 274.8125,49.1719 C274.6563,49.0469 274.5156,49.0156 274.0625,49.0156 L272.9375,49.0156 L272.9375,42.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="327" y="42.1387">developers</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="151" x="286.5" y="56.1074">(developers information)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="258.5" x2="439.5" y1="63.9375" y2="63.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="41" x="263.5" y="78.1479">dev_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="308.5" y="78.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="24" x="263.5" y="90.9526">mail</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="291.5" y="90.9526">VARCHAR[64]</text><!--MD5=[9bb17fa743f99e0a93eefef3fe62073b]
+class files--><rect codeLine="48" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="135.5703" id="files" style="stroke:#A80036;stroke-width:1.5;" width="135" x="279.5" y="411"/><ellipse cx="298.1" cy="429.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M298.5375,427.5 L300.3813,427.5 L300.3813,429.0938 C300.3813,429.4844 300.4125,429.6563 300.5063,429.7969 C300.6625,430.0469 300.9438,430.2031 301.2406,430.2031 C301.5063,430.2031 301.7563,430.0781 301.9281,429.8594 C302.0688,429.6875 302.0844,429.5625 302.0844,429.0938 L302.0844,425.8125 L293.3188,425.8125 L293.3188,429.0938 C293.3188,429.4844 293.35,429.6563 293.4281,429.7969 C293.5844,430.0625 293.8813,430.2031 294.1625,430.2031 C294.4438,430.2031 294.6938,430.0781 294.8656,429.8594 C294.975,429.6875 295.0063,429.5469 295.0063,429.0938 L295.0063,427.5 L296.8344,427.5 L296.8344,434.0156 L295.725,434.0156 C295.2875,434.0156 295.1625,434.0313 295.0063,434.1406 C294.7563,434.2969 294.6,434.5781 294.6,434.875 C294.6,435.125 294.7406,435.3906 294.9594,435.5469 C295.1156,435.6719 295.3344,435.7188 295.725,435.7188 L299.6625,435.7188 C299.9906,435.7188 300.2563,435.6719 300.3656,435.5938 C300.6313,435.4531 300.7719,435.1563 300.7719,434.875 C300.7719,434.5938 300.6469,434.3438 300.4125,434.1719 C300.2563,434.0469 300.1156,434.0156 299.6625,434.0156 L298.5375,434.0156 L298.5375,427.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="25" x="347.9" y="427.1387">files</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95" x="312.9" y="441.1074">(Files modified)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="280.5" x2="413.5" y1="448.9375" y2="448.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="41" x="285.5" y="463.1479">file_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="330.5" y="463.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="58" x="285.5" y="475.9526">commit_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="347.5" y="475.9526">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="69" x="285.5" y="488.7573">language_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="358.5" y="488.7573">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="25" x="285.5" y="501.562">path</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="314.5" y="501.562">VARCHAR[256]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="28" x="285.5" y="514.3667">ss_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="317.5" y="514.3667">VARCHAR[8]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="54" x="285.5" y="527.1714">add_lines</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="343.5" y="527.1714">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="71" x="285.5" y="539.9761">delete_lines</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="360.5" y="539.9761">INTEGER</text><!--MD5=[379472f26ed0953c7623aef344abf15a]
+class focus_xxx--><rect codeLine="58" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="84.3516" id="focus_xxx" style="stroke:#A80036;stroke-width:1.5;" width="161" x="88.5" y="608"/><ellipse cx="114.75" cy="626.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M115.1875,624.5 L117.0313,624.5 L117.0313,626.0938 C117.0313,626.4844 117.0625,626.6563 117.1563,626.7969 C117.3125,627.0469 117.5938,627.2031 117.8906,627.2031 C118.1563,627.2031 118.4063,627.0781 118.5781,626.8594 C118.7188,626.6875 118.7344,626.5625 118.7344,626.0938 L118.7344,622.8125 L109.9688,622.8125 L109.9688,626.0938 C109.9688,626.4844 110,626.6563 110.0781,626.7969 C110.2344,627.0625 110.5313,627.2031 110.8125,627.2031 C111.0938,627.2031 111.3438,627.0781 111.5156,626.8594 C111.625,626.6875 111.6563,626.5469 111.6563,626.0938 L111.6563,624.5 L113.4844,624.5 L113.4844,631.0156 L112.375,631.0156 C111.9375,631.0156 111.8125,631.0313 111.6563,631.1406 C111.4063,631.2969 111.25,631.5781 111.25,631.875 C111.25,632.125 111.3906,632.3906 111.6094,632.5469 C111.7656,632.6719 111.9844,632.7188 112.375,632.7188 L116.3125,632.7188 C116.6406,632.7188 116.9063,632.6719 117.0156,632.5938 C117.2813,632.4531 117.4219,632.1563 117.4219,631.875 C117.4219,631.5938 117.2969,631.3438 117.0625,631.1719 C116.9063,631.0469 116.7656,631.0156 116.3125,631.0156 L115.1875,631.0156 L115.1875,624.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="33" x="166.75" y="624.1387">focus</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="104" x="131.25" y="638.1074">(specific folders)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="89.5" x2="248.5" y1="645.9375" y2="645.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="56" x="94.5" y="660.1479">focus_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="154.5" y="660.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="69" x="94.5" y="672.9526">focus_folder</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="167.5" y="672.9526">VARCHAR[32]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="61" x="94.5" y="685.7573">focus_path</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="159.5" y="685.7573">VARCHAR[256]</text><!--MD5=[c244c4c85822b61f5f28802e47280205]
+class repo--><rect codeLine="64" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="71.5469" id="repo" style="stroke:#A80036;stroke-width:1.5;" width="139" x="475.5" y="26"/><ellipse cx="490.5" cy="44.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M490.9375,42.5 L492.7813,42.5 L492.7813,44.0938 C492.7813,44.4844 492.8125,44.6563 492.9063,44.7969 C493.0625,45.0469 493.3438,45.2031 493.6406,45.2031 C493.9063,45.2031 494.1563,45.0781 494.3281,44.8594 C494.4688,44.6875 494.4844,44.5625 494.4844,44.0938 L494.4844,40.8125 L485.7188,40.8125 L485.7188,44.0938 C485.7188,44.4844 485.75,44.6563 485.8281,44.7969 C485.9844,45.0625 486.2813,45.2031 486.5625,45.2031 C486.8438,45.2031 487.0938,45.0781 487.2656,44.8594 C487.375,44.6875 487.4063,44.5469 487.4063,44.0938 L487.4063,42.5 L489.2344,42.5 L489.2344,49.0156 L488.125,49.0156 C487.6875,49.0156 487.5625,49.0313 487.4063,49.1406 C487.1563,49.2969 487,49.5781 487,49.875 C487,50.125 487.1406,50.3906 487.3594,50.5469 C487.5156,50.6719 487.7344,50.7188 488.125,50.7188 L492.0625,50.7188 C492.3906,50.7188 492.6563,50.6719 492.7656,50.5938 C493.0313,50.4531 493.1719,50.1563 493.1719,49.875 C493.1719,49.5938 493.0469,49.3438 492.8125,49.1719 C492.6563,49.0469 492.5156,49.0156 492.0625,49.0156 L490.9375,49.0156 L490.9375,42.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="29" x="543.5" y="42.1387">repo</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="107" x="504.5" y="56.1074">(Repo Infomation)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="476.5" x2="613.5" y1="63.9375" y2="63.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="49" x="481.5" y="78.1479">repo_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="534.5" y="78.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="45" x="481.5" y="90.9526">address</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="530.5" y="90.9526">VARCHAR[64]</text><!--MD5=[321c7cb5d26f79fbdb64296378c93a18]
+class subsys--><rect codeLine="69" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="71.5469" id="subsys" style="stroke:#A80036;stroke-width:1.5;" width="124" x="285" y="614"/><ellipse cx="322.05" cy="632.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M322.4875,630.5 L324.3313,630.5 L324.3313,632.0938 C324.3313,632.4844 324.3625,632.6563 324.4563,632.7969 C324.6125,633.0469 324.8938,633.2031 325.1906,633.2031 C325.4563,633.2031 325.7063,633.0781 325.8781,632.8594 C326.0188,632.6875 326.0344,632.5625 326.0344,632.0938 L326.0344,628.8125 L317.2688,628.8125 L317.2688,632.0938 C317.2688,632.4844 317.3,632.6563 317.3781,632.7969 C317.5344,633.0625 317.8313,633.2031 318.1125,633.2031 C318.3938,633.2031 318.6438,633.0781 318.8156,632.8594 C318.925,632.6875 318.9563,632.5469 318.9563,632.0938 L318.9563,630.5 L320.7844,630.5 L320.7844,637.0156 L319.675,637.0156 C319.2375,637.0156 319.1125,637.0313 318.9563,637.1406 C318.7063,637.2969 318.55,637.5781 318.55,637.875 C318.55,638.125 318.6906,638.3906 318.9094,638.5469 C319.0656,638.6719 319.2844,638.7188 319.675,638.7188 L323.6125,638.7188 C323.9406,638.7188 324.2063,638.6719 324.3156,638.5938 C324.5813,638.4531 324.7219,638.1563 324.7219,637.875 C324.7219,637.5938 324.5969,637.3438 324.3625,637.1719 C324.2063,637.0469 324.0656,637.0156 323.6125,637.0156 L322.4875,637.0156 L322.4875,630.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="43" x="340.95" y="630.1387">subsys</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="364.45" y="644.1074"/><line style="stroke:#A80036;stroke-width:1.5;" x1="286" x2="408" y1="651.9375" y2="651.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="32" x="291" y="666.1479">ss_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="327" y="666.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="39" x="291" y="678.9526">subsys</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="334" y="678.9526">VARCHAR[8]</text><!--MD5=[8c25264fabe38feb155ffd76150d31fc]
+class languages--><rect codeLine="74" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="71.5469" id="languages" style="stroke:#A80036;stroke-width:1.5;" width="187" x="444.5" y="614"/><ellipse cx="459.5" cy="632.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M459.9375,630.5 L461.7813,630.5 L461.7813,632.0938 C461.7813,632.4844 461.8125,632.6563 461.9063,632.7969 C462.0625,633.0469 462.3438,633.2031 462.6406,633.2031 C462.9063,633.2031 463.1563,633.0781 463.3281,632.8594 C463.4688,632.6875 463.4844,632.5625 463.4844,632.0938 L463.4844,628.8125 L454.7188,628.8125 L454.7188,632.0938 C454.7188,632.4844 454.75,632.6563 454.8281,632.7969 C454.9844,633.0625 455.2813,633.2031 455.5625,633.2031 C455.8438,633.2031 456.0938,633.0781 456.2656,632.8594 C456.375,632.6875 456.4063,632.5469 456.4063,632.0938 L456.4063,630.5 L458.2344,630.5 L458.2344,637.0156 L457.125,637.0156 C456.6875,637.0156 456.5625,637.0313 456.4063,637.1406 C456.1563,637.2969 456,637.5781 456,637.875 C456,638.125 456.1406,638.3906 456.3594,638.5469 C456.5156,638.6719 456.7344,638.7188 457.125,638.7188 L461.0625,638.7188 C461.3906,638.7188 461.6563,638.6719 461.7656,638.5938 C462.0313,638.4531 462.1719,638.1563 462.1719,637.875 C462.1719,637.5938 462.0469,637.3438 461.8125,637.1719 C461.6563,637.0469 461.5156,637.0156 461.0625,637.0156 L459.9375,637.0156 L459.9375,630.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="62" x="520" y="630.1387">languages</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="155" x="473.5" y="644.1074">(Programming languages)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="445.5" x2="630.5" y1="651.9375" y2="651.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="78" x="450.5" y="666.1479">language_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="532.5" y="666.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="33" x="450.5" y="678.9526">name</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="487.5" y="678.9526">VARCHAR[32]</text><!--MD5=[83f1555febb7f0c6f87828f6a41de57c]
+class extensions--><rect codeLine="79" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="84.3516" id="extensions" style="stroke:#A80036;stroke-width:1.5;" width="149" x="463.5" y="753"/><ellipse cx="488.85" cy="771.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M489.2875,769.5 L491.1313,769.5 L491.1313,771.0938 C491.1313,771.4844 491.1625,771.6563 491.2563,771.7969 C491.4125,772.0469 491.6938,772.2031 491.9906,772.2031 C492.2563,772.2031 492.5063,772.0781 492.6781,771.8594 C492.8188,771.6875 492.8344,771.5625 492.8344,771.0938 L492.8344,767.8125 L484.0688,767.8125 L484.0688,771.0938 C484.0688,771.4844 484.1,771.6563 484.1781,771.7969 C484.3344,772.0625 484.6313,772.2031 484.9125,772.2031 C485.1938,772.2031 485.4438,772.0781 485.6156,771.8594 C485.725,771.6875 485.7563,771.5469 485.7563,771.0938 L485.7563,769.5 L487.5844,769.5 L487.5844,776.0156 L486.475,776.0156 C486.0375,776.0156 485.9125,776.0313 485.7563,776.1406 C485.5063,776.2969 485.35,776.5781 485.35,776.875 C485.35,777.125 485.4906,777.3906 485.7094,777.5469 C485.8656,777.6719 486.0844,777.7188 486.475,777.7188 L490.4125,777.7188 C490.7406,777.7188 491.0063,777.6719 491.1156,777.5938 C491.3813,777.4531 491.5219,777.1563 491.5219,776.875 C491.5219,776.5938 491.3969,776.3438 491.1625,776.1719 C491.0063,776.0469 490.8656,776.0156 490.4125,776.0156 L489.2875,776.0156 L489.2875,769.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="66" x="519.15" y="769.1387">extensions</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="94" x="505.15" y="783.1074">(File extension)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="464.5" x2="611.5" y1="790.9375" y2="790.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="84" x="469.5" y="805.1479">extension_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="557.5" y="805.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="469.5" y="817.9526">language_id INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="57" x="469.5" y="830.7573">extension</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="530.5" y="830.7573">VARCHAR[20]</text><!--MD5=[c2e31c8ea1031afb8a1d91332c3fe786]
+class audit--><rect codeLine="85" fill="#FEFECE" filter="url(#fz0dpr4rn58ov)" height="71.5469" id="audit" style="stroke:#A80036;stroke-width:1.5;" width="167" x="57.5" y="228"/><ellipse cx="101.75" cy="246.9688" fill="#FFAAAA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M102.1875,244.5 L104.0313,244.5 L104.0313,246.0938 C104.0313,246.4844 104.0625,246.6563 104.1563,246.7969 C104.3125,247.0469 104.5938,247.2031 104.8906,247.2031 C105.1563,247.2031 105.4063,247.0781 105.5781,246.8594 C105.7188,246.6875 105.7344,246.5625 105.7344,246.0938 L105.7344,242.8125 L96.9688,242.8125 L96.9688,246.0938 C96.9688,246.4844 97,246.6563 97.0781,246.7969 C97.2344,247.0625 97.5313,247.2031 97.8125,247.2031 C98.0938,247.2031 98.3438,247.0781 98.5156,246.8594 C98.625,246.6875 98.6563,246.5469 98.6563,246.0938 L98.6563,244.5 L100.4844,244.5 L100.4844,251.0156 L99.375,251.0156 C98.9375,251.0156 98.8125,251.0313 98.6563,251.1406 C98.4063,251.2969 98.25,251.5781 98.25,251.875 C98.25,252.125 98.3906,252.3906 98.6094,252.5469 C98.7656,252.6719 98.9844,252.7188 99.375,252.7188 L103.3125,252.7188 C103.6406,252.7188 103.9063,252.6719 104.0156,252.5938 C104.2813,252.4531 104.4219,252.1563 104.4219,251.875 C104.4219,251.5938 104.2969,251.3438 104.0625,251.1719 C103.9063,251.0469 103.7656,251.0156 103.3125,251.0156 L102.1875,251.0156 L102.1875,244.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="29" x="142.75" y="244.1387">audit</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="122.25" y="258.1074">(Audit logs)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="58.5" x2="223.5" y1="265.9375" y2="265.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="53" x="63.5" y="280.1479">audit_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="48" x="120.5" y="280.1479">INTEGER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="63.5" y="292.9526">entry_date TEXT NOT NULL</text><!--MD5=[0525346d966a6d275040d996bf218689]
+link files to languages--><path codeLine="92" d="M414.608,539.821 C442.617,564.604 474.135,592.491 498.306,613.878 " fill="none" id="files-languages" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[da3137c2bb243d019899ca9c4a85116d]
+link files to subsys--><path codeLine="93" d="M347,547.279 C347,570.107 347,594.686 347,613.964 " fill="none" id="files-subsys" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[087e20ca89fdd862f3ae78b8370db84d]
+link files to focus_xxx--><path codeLine="94" d="M279.452,544.133 C256.93,565.516 232.459,588.749 212.288,607.901 " fill="none" id="files-focus_xxx" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f3ed72b29c61ae4fada5321f6402cdf3]
+link views to mappings--><path codeLine="95" d="M90.8709,117.123 C71.0013,143.023 50.2484,175.626 40,209 C16.8575,284.365 42.8537,375.486 63.8593,429.988 " fill="none" id="views-mappings" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e1cb00f3aa7061415bf5b4e735841683]
+link views to audit--><path codeLine="96" d="M139.541,117.123 C139.893,152.291 140.341,197.125 140.647,227.747 " fill="none" id="views-audit" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[be7e7ddebc759b4203da02a67d37e725]
+link commits to mappings--><path codeLine="97" d="M280.548,319.024 C238.554,353.164 184.762,396.896 144.23,429.847 " fill="none" id="commits-mappings" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f9ab89b798fc1bd7374e767cf8a40668]
+link developers to commits--><path codeLine="99" d="M348.647,98.296 C348.355,127.475 347.935,169.535 347.592,203.848 " fill="none" id="developers-to-commits" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="347.541,208.851,351.6308,199.8915,347.591,203.8513,343.6312,199.8114,347.541,208.851" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="364.5" y="160.0669">A developer may</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="349" y="175.1997">submit many commits</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="339.926" y="117.6651">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="25" x="321.0088" y="197.902">1..N</text><!--MD5=[620ce80e23309668f585cc606d703322]
+link commits to files--><path codeLine="100" d="M347,319.024 C347,345.246 347,377.127 347,405.435 " fill="none" id="commits-to-files" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="347,410.677,351,401.677,347,405.677,343,401.677,347,410.677" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="352" y="362.0669">A commit may</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="107" x="348" y="377.1997">touch many files</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="25" x="320.3984" y="339.1128">1..N</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="25" x="320.7109" y="399.9537">1..N</text><!--MD5=[510aab93bfef65d364963ab8fefe8dec]
+link languages to extensions--><path codeLine="101" d="M538,686.348 C538,704.952 538,727.988 538,747.9701 " fill="none" id="languages-to-extensions" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="538,752.98,542,743.98,538,747.98,534,743.98,538,752.98" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="529.3375" y="705.7257">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="25" x="510.9297" y="741.827">1..N</text><!--MD5=[f378de9e81719a4b4d991be492cb2b94]
+link views to commits--><path codeLine="102" d="M195.288,117.123 C223.613,144.359 257.967,177.391 286.816,205.131 " fill="none" id="views-to-commits" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="290.667,208.834,286.952,199.7127,287.0629,205.3684,281.4071,205.4793,290.667,208.834" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="25" x="175.6247" y="136.8325">1..N</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="25" x="256.8478" y="197.8828">1..N</text><!--MD5=[938bb696211d399a4f1171efe4e751c9]
+@startuml
+' uncomment the line below if you're using computer with a retina display
+' skinparam dpi 300
+!define Table(name,desc) class name as "desc" << (T,#FFAAAA) >>
+' we use bold for primary key
+' green color for unique
+' and underscore for not_null
+!define primary_key(x) <b>x</b>
+!define unique(x) <color:green>x</color>
+!define not_null(x) <u>x</u>
+' other tags available:
+' <i></i>
+' <back:COLOR></color>, where color is a color name or html color code
+' (#FFAACC)
+' see: http://plantuml.com/classes.html#More
+hide methods
+hide stereotypes
+
+' entities
+
+Table(commits, "commits\n(Commits in repository)") {
+primary_key(commit_id) INTEGER
+not_null(sha) VARCHAR[40]
+not_null(summary) VARCHAR[75]
+not_null(hook) VARCHAR[20]
+not_null(dev_id) INTEGER
+}
+
+Table(views, "views\n(Commits views)") {
+primary_key(view_id) INTEGER
+not_null(view_name) VARCHAR[75]
+not_null(from_commit) VARCHAR[40]
+not_null(to_commit) VARCHAR[40]
+not_null(commit_date) VARCHAR[20]
+}
+
+Table(mappings, "mappings\n(Mappings between \nviews and commits)") {
+primary_key(mapping_id) INTEGER
+not_null(view_id) INTEGER
+not_null(commit_id) INTEGER
+}
+
+Table(developers, "developers\n(developers information)") {
+primary_key(dev_id) INTEGER
+not_null(mail) VARCHAR[64]
+not_null(team) VARCHAR(64)
+}
+
+Table(files, "files\n(Files modified)") {
+primary_key(file_id) INTEGER
+not_null(commit_id) INTEGER
+not_null(language_id) INTEGER
+not_null(path) VARCHAR[256]
+not_null(ss_id) VARCHAR[8]
+not_null(add_lines) INTEGER
+not_null(delete_lines) INTEGER
+}
+
+Table(focus_xxx, "focus\n(specific folders)") {
+primary_key(focus_id) INTEGER
+not_null(focus_folder) VARCHAR[32]
+not_null(focus_path) VARCHAR[256]
+}
+
+Table(repo, "repo\n(Repo Infomation)") {
+primary_key(repo_id) INTEGER
+not_null(address) VARCHAR[64]
+}
+
+Table(subsys, "subsys\n") {
+primary_key(ss_id) INTEGER
+not_null(subsys) VARCHAR[8]
+}
+
+Table(languages, "languages\n(Programming languages)") {
+primary_key(language_id) INTEGER
+not_null(name) VARCHAR[32]
+}
+
+Table(extensions, "extensions\n(File extension)") {
+primary_key(extension_id) INTEGER
+language_id INTEGER
+not_null(extension) VARCHAR[20]
+}
+
+Table(audit, "audit\n(Audit logs)") {
+primary_key(audit_id) INTEGER
+entry_date TEXT NOT NULL
+}
+
+' relationships
+' one-to-one relationship
+files - - languages
+files - - subsys
+files - - focus_xxx
+views - - mappings
+views - - audit
+commits - - mappings
+' one to many relationship
+developers "1" - -> "1..N" commits : "A developer may \nsubmit many commits"
+commits "1..N" - -> "1..N" files : "A commit may \ntouch many files"
+languages "1" - -> "1..N" extensions
+views "1..N" - -> "1..N" commits
+@enduml
+
+@startuml
+hide methods
+hide stereotypes
+
+
+class commits as "commits\n(Commits in repository)" << (T,#FFAAAA) >> {
+<b>commit_id</b> INTEGER
+<u>sha</u> VARCHAR[40]
+<u>summary</u> VARCHAR[75]
+<u>hook</u> VARCHAR[20]
+<u>dev_id</u> INTEGER
+}
+
+class views as "views\n(Commits views)" << (T,#FFAAAA) >> {
+<b>view_id</b> INTEGER
+<u>view_name</u> VARCHAR[75]
+<u>from_commit</u> VARCHAR[40]
+<u>to_commit</u> VARCHAR[40]
+<u>commit_date</u> VARCHAR[20]
+}
+
+class mappings as "mappings\n(Mappings between \nviews and commits)" << (T,#FFAAAA) >> {
+<b>mapping_id</b> INTEGER
+<u>view_id</u> INTEGER
+<u>commit_id</u> INTEGER
+}
+
+class developers as "developers\n(developers information)" << (T,#FFAAAA) >> {
+<b>dev_id</b> INTEGER
+<u>mail</u> VARCHAR[64]
+<u>team</u> VARCHAR(64)
+}
+
+class files as "files\n(Files modified)" << (T,#FFAAAA) >> {
+<b>file_id</b> INTEGER
+<u>commit_id</u> INTEGER
+<u>language_id</u> INTEGER
+<u>path</u> VARCHAR[256]
+<u>ss_id</u> VARCHAR[8]
+<u>add_lines</u> INTEGER
+<u>delete_lines</u> INTEGER
+}
+
+class focus_xxx as "focus\n(specific folders)" << (T,#FFAAAA) >> {
+<b>focus_id</b> INTEGER
+<u>focus_folder</u> VARCHAR[32]
+<u>focus_path</u> VARCHAR[256]
+}
+
+class repo as "repo\n(Repo Infomation)" << (T,#FFAAAA) >> {
+<b>repo_id</b> INTEGER
+<u>address</u> VARCHAR[64]
+}
+
+class subsys as "subsys\n" << (T,#FFAAAA) >> {
+<b>ss_id</b> INTEGER
+<u>subsys</u> VARCHAR[8]
+}
+
+class languages as "languages\n(Programming languages)" << (T,#FFAAAA) >> {
+<b>language_id</b> INTEGER
+<u>name</u> VARCHAR[32]
+}
+
+class extensions as "extensions\n(File extension)" << (T,#FFAAAA) >> {
+<b>extension_id</b> INTEGER
+language_id INTEGER
+<u>extension</u> VARCHAR[20]
+}
+
+class audit as "audit\n(Audit logs)" << (T,#FFAAAA) >> {
+<b>audit_id</b> INTEGER
+entry_date TEXT NOT NULL
+}
+
+files - - languages
+files - - subsys
+files - - focus_xxx
+views - - mappings
+views - - audit
+commits - - mappings
+developers "1" - -> "1..N" commits : "A developer may \nsubmit many commits"
+commits "1..N" - -> "1..N" files : "A commit may \ntouch many files"
+languages "1" - -> "1..N" extensions
+views "1..N" - -> "1..N" commits
+@enduml
+
+PlantUML version 1.2021.9beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

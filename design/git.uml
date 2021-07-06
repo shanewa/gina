@@ -1,0 +1,105 @@
+@startuml
+' uncomment the line below if you're using computer with a retina display
+' skinparam dpi 300
+!define Table(name,desc) class name as "desc" << (T,#FFAAAA) >>
+' we use bold for primary key
+' green color for unique
+' and underscore for not_null
+!define primary_key(x) <b>x</b>
+!define unique(x) <color:green>x</color>
+!define not_null(x) <u>x</u>
+' other tags available:
+' <i></i>
+' <back:COLOR></color>, where color is a color name or html color code
+' (#FFAACC)
+' see: http://plantuml.com/classes.html#More
+hide methods
+hide stereotypes
+
+' entities
+
+Table(commits, "commits\n(Commits in repository)") {
+primary_key(commit_id) INTEGER
+not_null(sha) VARCHAR[40]
+not_null(summary) VARCHAR[75]
+not_null(hook) VARCHAR[20]
+not_null(dev_id) INTEGER
+}
+
+Table(views, "views\n(Commits views)") {
+primary_key(view_id) INTEGER
+not_null(view_name) VARCHAR[75]
+not_null(from_commit) VARCHAR[40]
+not_null(to_commit) VARCHAR[40]
+not_null(commit_date) VARCHAR[20]
+}
+
+Table(mappings, "mappings\n(Mappings between \nviews and commits)") {
+primary_key(mapping_id) INTEGER
+not_null(view_id) INTEGER
+not_null(commit_id) INTEGER
+}
+
+Table(developers, "developers\n(developers information)") {
+primary_key(dev_id) INTEGER
+not_null(mail) VARCHAR[64]
+not_null(team) VARCHAR(64)
+}
+
+Table(files, "files\n(Files modified)") {
+primary_key(file_id) INTEGER
+not_null(commit_id) INTEGER
+not_null(language_id) INTEGER
+not_null(path) VARCHAR[256]
+not_null(ss_id) VARCHAR[8]
+not_null(add_lines) INTEGER
+not_null(delete_lines) INTEGER
+}
+
+Table(focus_xxx, "focus\n(specific folders)") {
+primary_key(focus_id) INTEGER
+not_null(focus_folder) VARCHAR[32]
+not_null(focus_path) VARCHAR[256]
+}
+
+Table(repo, "repo\n(Repo Infomation)") {
+primary_key(repo_id) INTEGER
+not_null(address) VARCHAR[64]
+}
+
+Table(subsys, "subsys\n") {
+primary_key(ss_id) INTEGER
+not_null(subsys) VARCHAR[8]
+}
+
+Table(languages, "languages\n(Programming languages)") {
+primary_key(language_id) INTEGER
+not_null(name) VARCHAR[32]
+}
+
+Table(extensions, "extensions\n(File extension)") {
+primary_key(extension_id) INTEGER
+language_id INTEGER
+not_null(extension) VARCHAR[20]
+}
+
+Table(audit, "audit\n(Audit logs)") {
+primary_key(audit_id) INTEGER
+entry_date TEXT NOT NULL
+}
+
+' relationships
+' one-to-one relationship
+files -- languages
+files -- subsys
+files -- focus_xxx
+views -- mappings
+views -- audit
+commits -- mappings
+' one to many relationship
+developers "1" --> "1..N" commits : "A developer may \nsubmit many commits"
+commits "1..N" --> "1..N" files : "A commit may \ntouch many files"
+languages "1" --> "1..N" extensions
+views "1..N" --> "1..N" commits
+
+@enduml
